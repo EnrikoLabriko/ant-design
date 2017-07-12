@@ -58,6 +58,7 @@ const MonthPicker = wrapPicker(createPicker(MonthCalendar), 'YYYY-MM');
 
 export interface RangePickerProps extends PickerProps {
   className?: string;
+  disabled?: boolean;
   value?: [moment.Moment, moment.Moment];
   defaultValue?: [moment.Moment, moment.Moment];
   defaultPickerValue?: [moment.Moment, moment.Moment];
